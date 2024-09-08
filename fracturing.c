@@ -1,9 +1,10 @@
-/*************************************************************************
+/***************************************************************************
 // Fracturing.c
 // Author: Isabella Demers
 // Date: 09/08/24
 // Class: COP 3223, Professor Parra
 // Purpose: This program uses fracturing to calculate measurements of a circle.
+// Input: None
 //
 // ****************************************************************************/
 
@@ -12,11 +13,13 @@
 #include <math.h>
 #define  PI 3.14159
 
+//displays coordinates
 void printPoints(double x1, double y1, double x2, double y2) {
     printf("Point #1 entered: x1 = %.2f; y1 = %.2f\n", x1, y1);
     printf("Point #2 entered: x2 = %.2f; y2 = %.2f\n", x2, y2);
 }
 
+//calculates distance between points
 double calculateDistance() {
     
     double x1 = 3.0, y1 = 4.0;
@@ -28,6 +31,7 @@ double calculateDistance() {
     return distance; 
 }
 
+//calculates the parameter 
 double calculatePerimeter(){
     double distance = calculateDistance();
     double perimeter = 2 * distance; 
@@ -38,6 +42,7 @@ double calculatePerimeter(){
     return 1.0; 
 }
 
+//calculates the area
 double calculateArea() {
     double distance = calculateDistance();
     double area = PI * pow(distance, 2);
@@ -48,6 +53,7 @@ double calculateArea() {
     return 1.0; 
 }
 
+//calculates the width
 double calculateWidth() {
     double x1 = 3.0, y1 = 4.0;
     double x2 = 4.0, y2 = 5.0;
@@ -59,6 +65,7 @@ double calculateWidth() {
     return 1.0; 
 }
 
+//calculates the height
 double calculateHeight() {
     double x1 = 3.0, y1 = 4.0;
     double x2 = 4.0, y2 = 5.0;
@@ -70,6 +77,7 @@ double calculateHeight() {
     return 1.0; 
 }
 
+//
 int main(int argc, char**argv) {
     //no output required 
     calculateDistance();
