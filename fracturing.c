@@ -1,3 +1,13 @@
+/*************************************************************************
+// Fracturing.c
+// Author: Isabella Demers
+// Date: 09/08/24
+// Class: COP 3223, Professor Parra
+// Purpose: This program uses fracturing to calculate measurements of a circle.
+//
+// ****************************************************************************/
+
+
 #include <stdio.h>
 #include <math.h>
 #define  PI 3.14159
